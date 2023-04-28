@@ -7,15 +7,10 @@ The second unique update i have updated is the player speed boost. Pick up the r
 
 The first upgrade i have made is added the lives function for the player. The code for that function can be seen in the following file:
 
-
     DestroyOnTrigger2D.cs
-
-
 
 The unique change i have made in the game, is added Speed Upgrade powerup, similar to the shield powerup.
 Upon pickup the Speed Upgrade will boost the player's speed for 5 seconds.
-
-
 
 The on trigger enter2d function, similar to the Shield upgrade.
 
@@ -32,9 +27,9 @@ The on trigger enter2d function, similar to the Shield upgrade.
 
             }
         }
-        
+
 The upgrade function:
-        
+
     private IEnumerator UpgradeTemporarily(DestroyOnTrigger2D destroyComponent, Collider2D other) {   // co-routines
         // private async void ShieldTemporarily(DestroyOnTrigger2D destroyComponent) {      // async-await
             InputMover inputmover = other.GetComponent<InputMover>();
@@ -51,6 +46,3 @@ The upgrade function:
             Debug.Log("Speed upgrade gone!");
 
         }
-
-
-
